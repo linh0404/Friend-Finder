@@ -1,0 +1,22 @@
+body {
+    background: url(https://img.wallpapersafari.com/desktop/1920/1080/79/99/7pCKEG.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    text-align: center;
+    background-image: url('../images/metro-logo.png');
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
