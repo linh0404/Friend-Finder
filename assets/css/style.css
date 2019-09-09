@@ -4,7 +4,11 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: white;
+    padding-bottom: 40px;
 }
+
+/* https://wallpapercave.com/wp/k87aIRJ.jpg */
 
 .jumbotron {
     background-color: rgba(0,0,0,0.5);
@@ -20,3 +24,9 @@ body {
     position: absolute;
     bottom: 0;
 }
+
+.container {
+    background-color: rgba(0,0,0,0.6);
+    padding-bottom: 30px;
+}
+
