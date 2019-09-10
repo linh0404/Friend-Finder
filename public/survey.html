@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Friend Finder</title>
         <!-- reset.css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
         <!-- jquery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- bootstrap -->
@@ -25,8 +25,12 @@
         </div>
         <form class="container form-container">
             <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="name" class="form-control" id="name" placeholder="First Name - Surname">
+            </div>
+            <div class="form-group">
                 <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="question1">
                     <option selected>Choose...</option>
                     <option>1 (strongly disagree)</option>
                     <option>2 (disagree) </option>
@@ -37,7 +41,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Generally speaking, you rely more on your experience than your imagination.</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="question2">
                     <option selected>Choose...</option>
                     <option>1 (strongly disagree)</option>
                     <option>2 (disagree) </option>
@@ -48,7 +52,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">You find it easy to stay relaxed and focused even when there is some pressure.</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="question3">
                     <option selected>Choose...</option>
                     <option>1 (strongly disagree)</option>
                     <option>2 (disagree) </option>
@@ -59,7 +63,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">You rarely do something just out of sheer curiosity.</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="question4">
                     <option selected>Choose...</option> 
                     <option>1 (strongly disagree)</option>
                     <option>2 (disagree) </option>
@@ -70,7 +74,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">People can rarely upset you.</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="question5">
                     <option selected>Choose...</option>    
                     <option>1 (strongly disagree)</option>
                     <option>2 (disagree) </option>
@@ -81,7 +85,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">It is often difficult for you to relate to other people’s feelings.</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="question6">
                     <option selected>Choose...</option>  
                     <option>1 (strongly disagree)</option>
                     <option>2 (disagree) </option>
@@ -92,7 +96,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">In a discussion, truth should be more important than people’s sensitivities.</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="question7">
                     <option selected>Choose...</option>   
                     <option>1 (strongly disagree)</option>
                     <option>2 (disagree) </option>
@@ -103,7 +107,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">You rarely get carried away by fantasies and ideas.</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="question8">
                     <option selected>Choose...</option>  
                     <option>1 (strongly disagree)</option>
                     <option>2 (disagree) </option>
@@ -114,7 +118,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="question9">
                     <option selected>Choose...</option>  
                     <option>1 (strongly disagree)</option>
                     <option>2 (disagree) </option>
@@ -125,7 +129,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControl">You feel more energetic after spending time with a group of people.</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="question10">
                     <option selected>Choose...</option>  
                     <option>1 (strongly disagree)</option>
                     <option>2 (disagree) </option>
@@ -138,4 +142,26 @@
             <button id="submit" type="submit" class="btn btn-dark">Submit</button>
         </form>   
     </body>
-</html>◊
+</html>
+
+<script type="text/javascript">
+    $("#submit").on("click", function(event) {
+        event.preventDefault();
+
+        var newFriend = {
+            name: $("#name").val().trim(),
+            ans1: $("#question1").val().trim(),
+            ans2: $("#question2").val().trim(),
+            ans3: $("#question3").val().trim(),
+            ans4: $("#question4").val().trim(),
+            ans5: $("#question5").val().trim(),
+            ans6: $("#question6").val().trim(),
+            ans7: $("#question7").val().trim(),
+            ans8: $("#question8").val().trim(),
+            ans9: $("#question9").val().trim(),
+            ans10: $("#question10").val().trim(),
+        };
+        console.log(newFriend);
+    });
+
+</script>
