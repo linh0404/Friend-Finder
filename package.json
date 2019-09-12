@@ -19,5 +19,6 @@
   "homepage": "https://github.com/linh0404/Friend-Finder#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }
