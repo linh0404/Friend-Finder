@@ -176,11 +176,11 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="bestFriend">You've made a friend!</h4>
                 </div>
                 <div class="modal-body" id="friend-info">
-                    <h5 id="friend-name">Hello</h5>
+                    <h5 id="friend-name"></h5>
+                    <h6 id="friend-info"></h6>
                     <img id="friend-photo" src="" alt="Meet your new friend!">
                 </div>
                 <div class="modal-footer">
@@ -249,6 +249,7 @@
             console.log(current);
             $("#friend-name").text("Hi " + current.name + ", my name is " + bestFriend.name + "!");
             $("img#friend-photo").attr("src", bestFriend.picture);
+            // $("#friend-name").text(bestFriend.info);
         });
         });
     });
