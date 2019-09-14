@@ -11,6 +11,13 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Goblin+One|Lora|Macondo+Swash+Caps" rel="stylesheet">
     <!-- font awesome-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- style.css -->
@@ -45,7 +52,7 @@
             <label for="exampleFormControlSelect1">#1. Your mind is always buzzing with unexplored ideas and
                 plans.</label>
             <select class="form-control" id="question1">
-                <option selected>Choose...</option>
+                <option selected value="" disabled>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2 (disagree) </option>
                 <option value="3">3 (neutral) </option>
@@ -57,7 +64,7 @@
             <label for="exampleFormControlSelect1">#2. Generally speaking, you rely more on your experience than your
                 imagination.</label>
             <select class="form-control" id="question2">
-                <option selected>Choose...</option>
+                <option selected value="" disabled>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2 (disagree) </option>
                 <option value="3">3 (neutral) </option>
@@ -69,7 +76,7 @@
             <label for="exampleFormControlSelect1">#3. You find it easy to stay relaxed and focused even when there is
                 some pressure.</label>
             <select class="form-control" id="question3">
-                <option selected>Choose...</option>
+                <option selected value="" disabled>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2 (disagree) </option>
                 <option value="3">3 (neutral) </option>
@@ -80,7 +87,7 @@
         <div class="form-group">
             <label for="exampleFormControlSelect1">#4. You rarely do something just out of sheer curiosity.</label>
             <select class="form-control" id="question4">
-                <option selected>Choose...</option>
+                <option selected value="" disabled>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2 (disagree) </option>
                 <option value="3">3 (neutral) </option>
@@ -91,7 +98,7 @@
         <div class="form-group">
             <label for="exampleFormControlSelect1">#5. People can rarely upset you.</label>
             <select class="form-control" id="question5">
-                <option selected>Choose...</option>
+                <option selected value="" disabled>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2 (disagree) </option>
                 <option value="3">3 (neutral) </option>
@@ -103,7 +110,7 @@
             <label for="exampleFormControlSelect1">#6. It is often difficult for you to relate to other people’s
                 feelings.</label>
             <select class="form-control" id="question6">
-                <option selected>Choose...</option>
+                <option selected value="" disabled>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2 (disagree) </option>
                 <option value="3">3 (neutral) </option>
@@ -115,7 +122,7 @@
             <label for="exampleFormControlSelect1">#7. In a discussion, truth should be more important than people’s
                 sensitivities.</label>
             <select class="form-control" id="question7">
-                <option selected>Choose...</option>
+                <option selected value="" disabled>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2 (disagree) </option>
                 <option value="3">3 (neutral) </option>
@@ -126,7 +133,7 @@
         <div class="form-group">
             <label for="exampleFormControlSelect1">#8. You rarely get carried away by fantasies and ideas.</label>
             <select class="form-control" id="question8">
-                <option selected>Choose...</option>
+                <option selected value="" disabled>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2 (disagree) </option>
                 <option value="3">3 (neutral) </option>
@@ -138,7 +145,7 @@
             <label for="exampleFormControlSelect1">#9. You think that everyone’s views should be respected regardless of
                 whether they are supported by facts or not.</label>
             <select class="form-control" id="question9">
-                <option selected>Choose...</option>
+                <option selected value="" disabled>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2 (disagree) </option>
                 <option value="3">3 (neutral) </option>
@@ -150,7 +157,7 @@
             <label for="exampleFormControl">#10. You feel more energetic after spending time with a group of
                 people.</label>
             <select class="form-control" id="question10">
-                <option selected>Choose...</option>
+                <option selected value="" disabled>Choose...</option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2 (disagree) </option>
                 <option value="3">3 (neutral) </option>
@@ -160,24 +167,24 @@
         </div>
         <br>
         <button id="submit" type="submit" class="btn btn-dark" data-toggle="modal"
-            data-target="#myModal">Submit</button>
+            data-target="#myModal">Submit
+        </button>
     </form>
 
-    <!-- MODAL -->
-    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+    <!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="bestFriend">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">You've matched!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="bestFriend">You've made a friend!</h4>
                 </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.</p>
+                <div class="modal-body" id="friend-info">
+                    <h5 id="friend-name">Hello</h5>
+                    <img id="friend-photo" src="" alt="Meet your new friend!">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -211,14 +218,8 @@
         };
         console.log(newFriend);
 
-        $.post("/api/friends", newFriend, function (data) {
-            if (data) {
-                alert("Get ready to make new friends!");
-            } else {
-                alert("Uh oh! Something went wrong with your survey");
-            }
-
-            //CLEARS THE FORM
+        $.post("/api/friends", newFriend).then(function(data) {
+            console.log(data)
             $("#name").val("");
             $("#picture").val("");
             $("#question2").val(""), 
@@ -232,20 +233,23 @@
             $("#question9").val(""),
             $("#question10").val("")
 
-        }).done(function() {
-            $.ajax({
-                url: "api/friends",
-                method: "GET",
-                datatype: 'json'
-            }).done(function(res, err) {
-                if(err) {
-                    console.log(err);
-                }
-                var current = res[res.length - 1];
-                var bestFriend = current.bestie;
-                console.log(bestFriend);
-                $("#friend-name").text("Hi " + current.name + ", my name is " + bestFriend.name + "!");
-            });
+
+        $.ajax({
+            url: "api/friends",
+            method: "GET",
+            datatype: 'json'
+
+        }).done(function(res, err) {
+            if(err) {
+                console.log(err);
+            }
+            var current = res[res.length - 1];
+            var bestFriend = current.bestie;
+            console.log(bestFriend);
+            console.log(current);
+            $("#friend-name").text("Hi " + current.name + ", my name is " + bestFriend.name + "!");
+            $("img#friend-photo").attr("src", bestFriend.picture);
+        });
         });
     });
 </script>

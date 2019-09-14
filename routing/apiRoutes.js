@@ -19,7 +19,9 @@ module.exports = function(app) {
 
         convertAnswers(friendInput);
         
-        compareFriends(friendsData, friendInput);
+        var bestFriend = compareFriends(friendsData, friendInput);
+
+        res.status(200).json(bestFriend)
     });
 };
 
@@ -82,5 +84,8 @@ function compareFriends(friendsData, friendInput) {
 
     var bestFriend = friendsData[matchIndex];
 
-    console.log(bestFriend);
+    friendInput.bestie = bestFriend;
+
+    return bestFriend;
+
 }
