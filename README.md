@@ -13,6 +13,10 @@ npm init
 npm install
 node server.js
 ```
+# Heroku Host
+Alternatively, the app is also hosted on Heroku using the below link:
+
+https://murmuring-coast-79309.herokuapp.com
 
 # How it works
 Using it is super simple. Once you've run it on your local server, you can go to your localhost:8080 from any browser and the website should be up and running. 
